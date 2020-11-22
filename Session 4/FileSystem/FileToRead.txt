@@ -1,0 +1,3 @@
+
+EventEmitter - EMITES EVENT("close, pipe")
+Listeners - Listens to event, and perform operaitons.
