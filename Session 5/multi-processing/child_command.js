@@ -1,0 +1,1 @@
+console.log("Chlid Process executed with agrs " + process.argv[2] + " " + process.argv[3]);
