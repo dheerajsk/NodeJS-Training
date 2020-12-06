@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+        title Add Product
+    body(style="padding: 5%; padding-top: 0")
+        include navbar.pug
+        form(method="POST" action="/product/add")
+            div.form-group
+                label Name
+                input.form-control(name="name" type="text" placeholder="Enter name")
+            div.form-group
+                label Description
+                input.form-control(name="description" type="text" placeholder="Enter Description")
+            div.form-group
+                label Price
+                input.form-control(name="price" type="number" placeholder="Enter Price")
+            button(class="btn btn-primary" type="submit") Add Product
