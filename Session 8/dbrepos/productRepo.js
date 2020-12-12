@@ -38,6 +38,7 @@ exports.get = (id, callback) => {
         .then((product) => {
             return callback(product);
         });
+    return callback(product);
 }
 
 exports.delete = (id, callback) => {
@@ -46,4 +47,15 @@ exports.delete = (id, callback) => {
         .then((result) => {
             return callback();
         });
+}
+
+function add(a, b, testFuntion) {
+    testFuntion();
+    return a + b;
+}
+
+var a = 10;
+
+var testFuntion = function test() {
+    console.log("test");
 }
